@@ -12,7 +12,7 @@ int main(){
 
     int iteration_times = 0;
     int i = 0;
-    float div = 1;
+    double div = 1;
     double exp_o = 1.0;
 
     printf("How Many Times u WANT!: ");
@@ -21,7 +21,7 @@ int main(){
     for(i=1;i<iteration_times+1;i++){
 	div = i*div;
 	exp_o = exp_o + 1/div;
-	printf("%d. e = %5.10f      \n",i ,exp_o);
+	printf("%d. e = %5.20f      \n",i ,exp_o);
     }
 }
 //float p

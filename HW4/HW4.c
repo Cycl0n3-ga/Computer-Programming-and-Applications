@@ -10,10 +10,6 @@ int b2d(int input){
         if(input%2){
             output += pow(2,point);
         }
-        // else{
-        //     output += 0;
-
-        // }
         input = input/10;
         point++;
     }
@@ -23,30 +19,16 @@ int b2d(int input){
 
 int d2b(int input){
     
-    int num;
-    int output=0;
-    num = input;
-    int point =0;
-    int i=0;
-    while(input>pow(2,point)){
-        point++;
+	long long output = 0;
+    int x, i = 1;
+
+
+ 	while (input!=0) {
+    	x = input % 2;
+    	input /= 2;
+    	output += x * i;
+    	i *= 10;
     }
-    
-    for(i=point;i>=0;i--){
-        if(pow(2,point)<num){
-            num-=pow(2,point);
-            output = output*10+1;
-        }else{
-            
-            //num-=pow(2,point);
-            output = output*10;
-            
-            
-        }
-        
-    }
-           
-        
         
     return output;
 
