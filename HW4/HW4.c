@@ -23,7 +23,7 @@ int d2b(int input){
     int x, i = 1;
 
 
- 	while (input!=0) {
+ 	while (input>0) {
     	x = input % 2;
     	input /= 2;
     	output += x * i;
